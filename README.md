@@ -2,7 +2,19 @@
 
 Cloudflare Worker that fetches your rated books from Hardcover and displays them as markdown grouped by year.
 
-## Setup
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ascorbic/hardcover-worker)
+
+## Deploy
+
+Click the button above to deploy to your Cloudflare account. You'll need to set the `HARDCOVER_TOKEN` secret after deployment:
+
+```bash
+wrangler secret put HARDCOVER_TOKEN
+```
+
+Get your Hardcover API token from your [Hardcover account settings](https://hardcover.app/settings).
+
+## Local Development
 
 1. Install dependencies:
 ```bash
@@ -17,12 +29,6 @@ HARDCOVER_TOKEN=your_token_here
 3. Run locally:
 ```bash
 pnpm dev
-```
-
-4. Deploy:
-```bash
-pnpm deploy
-wrangler secret put HARDCOVER_TOKEN
 ```
 
 ## Usage

@@ -1,5 +1,8 @@
 {
-	"name": "book-list",
+	"name": "hardcover-rated-books",
 	"main": "src/index.ts",
-	"compatibility_date": "2025-12-11"
+	"compatibility_date": "2025-12-11",
+	// Required: Set your Hardcover API token as a secret
+	// Run: wrangler secret put HARDCOVER_TOKEN
+	"vars": {}
 }
